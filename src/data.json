@@ -1,0 +1,39 @@
+{
+	"realisation": [
+		{
+			"name": "La Revue du Design",
+			"desc": "Mise en page d'un magazine de design.",
+			"img": ["revue_0.webp", "revue_1.webp"],
+			"date": "04/03/2022",
+			"with": "InDesign, Photoshop, Réalisations"
+		},
+		{
+			"name": "L’Odyssée",
+			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
+			"img": ["odyssee_0.webp", "odyssee_1.jpg"],
+			"date": "04/03/2022",
+			"with": "InDesign, Photoshop, Réalisations"
+		},
+		{
+			"name": "L’Odyssée",
+			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
+			"img": ["odyssee_0.webp"],
+			"date": "04/03/2022",
+			"with": "InDesign, Photoshop, Réalisations"
+		},
+		{
+			"name": "L’Odyssée",
+			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
+			"img": ["odyssee_0.webp"],
+			"date": "04/03/2022",
+			"with": "InDesign, Photoshop, Réalisations"
+		},
+		{
+			"name": "L’Odyssée",
+			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
+			"img": ["odyssee_0.webp"],
+			"date": "04/03/2022",
+			"with": "InDesign, Photoshop, Réalisations"
+		}
+	]
+}
