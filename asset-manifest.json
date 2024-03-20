@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-site/static/css/main.94df8c94.css",
+    "main.js": "/my-site/static/js/main.9312ab3f.js",
+    "static/js/453.2cd4a051.chunk.js": "/my-site/static/js/453.2cd4a051.chunk.js",
+    "static/media/image (33).png": "/my-site/static/media/image (33).b9549eab93081a89f8b4.png",
+    "static/media/odyssee_1.jpg": "/my-site/static/media/odyssee_1.3933754e3852a7fd7b1e.jpg",
+    "static/media/revue_0.webp": "/my-site/static/media/revue_0.610de728382fa45eb58d.webp",
+    "static/media/profil.jpg": "/my-site/static/media/profil.0c054facdb6560d6dab6.jpg",
+    "static/media/revue_1.webp": "/my-site/static/media/revue_1.4cff731e222e801116e3.webp",
+    "static/media/odyssee_0.webp": "/my-site/static/media/odyssee_0.470e369c0f46bc7c62cd.webp",
+    "index.html": "/my-site/index.html",
+    "main.94df8c94.css.map": "/my-site/static/css/main.94df8c94.css.map",
+    "main.9312ab3f.js.map": "/my-site/static/js/main.9312ab3f.js.map",
+    "453.2cd4a051.chunk.js.map": "/my-site/static/js/453.2cd4a051.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94df8c94.css",
+    "static/js/main.9312ab3f.js"
+  ]
+}
