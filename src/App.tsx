@@ -23,6 +23,7 @@ function App() {
 					<img
 						src={require("./assets/" + item.img[0])}
 						alt={item.name}
+                        className="max-h-72"
 					/>
 				) : (
 					<Carousel
@@ -54,6 +55,7 @@ function App() {
 								src={require("./assets/" + img)}
 								alt={item.name + "_" + i}
 								key={item.name + "_" + i}
+                                className="max-h-72 m-auto"
 							/>
 						))}
 					</Carousel>

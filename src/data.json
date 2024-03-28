@@ -92,7 +92,7 @@
 				"feed your fish logo déclinaison.webp",
 				"feed your fish packaging.jpg",
 				"planche feed your fish 1.png",
-				"planche feed your fish 2.jpg"
+				"planche feed your fish 2.png"
 			],
 			"date": "2022"
 		},
@@ -161,14 +161,14 @@
 		{
 			"name": "Vidéo",
 			"desc": "Ecriture du script, prise de vue, motage vidéo, voix off. Vidéo storytelling \"Draw my life\" de l'agence Junior Arana créée dans le cadre d'un projet de fin d'année. \n Réalisation sur Première Pro",
-			"img": ["Draw Arana-4e export.mp4"],
+			"img": [],
 			"date": "2022"
 		},
 		{
 			"name": "Print",
 			"desc": "Création d'un flyer A5 à destination des habitants de la commune, ainsi qu’une affiche format A3 qui a été affichée dans les villages de l’uzège à l'occasion de la fête votive de Saint-Maximin. \n Réalisation sur Photoshop",
 			"img": [
-				"flyer-fete-votive-saint-maximi1.webp",
+				"flyer-fete-votive-saint-maximin1.webp",
 				"flyer-verso.webp",
 				"affiche-fete-votive-saint-maximin-a3.webp"
 			],
@@ -186,7 +186,7 @@
 			"img": [
 				"logo 50 ans pink lady.png",
 				"std.png",
-				"remercienements.png"
+				"remerciements.png"
 			],
 			"date": "2024"
 		},
@@ -197,7 +197,7 @@
 				"newman.png",
 				"newman2.png",
 				"newman3.png",
-				"cheminse beige.png",
+				"chemise beige.png",
 				"chemise manche beige.png"
 			],
 			"date": "2024"
