@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.06fe0984.css",
-    "main.js": "/my-site/static/js/main.8ce13925.js",
+    "main.js": "/my-site/static/js/main.ff9ebacc.js",
     "static/js/453.2cd4a051.chunk.js": "/my-site/static/js/453.2cd4a051.chunk.js",
     "static/media/Mockup badge.png": "/my-site/static/media/Mockup badge.b6de8e2d41a98f761f25.png",
     "static/media/instagram capfun las bousigues.png": "/my-site/static/media/instagram capfun las bousigues.193cb65c5289fe8da77e.png",
@@ -90,11 +90,11 @@
     "static/media/icone delice cake.webp": "/my-site/static/media/icone delice cake.6d168acb0d8d6fa412e5.webp",
     "index.html": "/my-site/index.html",
     "main.06fe0984.css.map": "/my-site/static/css/main.06fe0984.css.map",
-    "main.8ce13925.js.map": "/my-site/static/js/main.8ce13925.js.map",
+    "main.ff9ebacc.js.map": "/my-site/static/js/main.ff9ebacc.js.map",
     "453.2cd4a051.chunk.js.map": "/my-site/static/js/453.2cd4a051.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06fe0984.css",
-    "static/js/main.8ce13925.js"
+    "static/js/main.ff9ebacc.js"
   ]
 }
