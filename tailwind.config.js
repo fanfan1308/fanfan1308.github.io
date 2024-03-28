@@ -5,13 +5,17 @@ module.exports = withMT({
 	content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
 	theme: {
 		screen: {
-			xsm: "425px",
-			sm: "640px",
-			md: "768px",
-			lg: "1024px",
-			xl: "1280px",
+			"sm": "640px",
+			"md": "768px",
+			"lg": "1024px",
+			"xl": "1280px",
 			"2xl": "1536px",
 		},
+        extends: {
+            screen: {
+                "xsm": "425px",
+            }
+        }
 	},
 	plugins: [
 		plugin(function ({ matchUtilities }) {

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-cr {
+    grid-template-columns: repeat(auto-fill, 20rem)
+}
+
+@media (min-width: 720px) {
+    .grid-cr {
+        grid-template-columns: repeat(auto-fill, 15rem)
+    }
+}
+
+@media (min-width: 960px) {
+    .grid-cr {
+        grid-template-columns: repeat(auto-fill, 20rem)
+    }
+}

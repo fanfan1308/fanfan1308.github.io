@@ -1,39 +1,223 @@
 {
 	"realisation": [
 		{
-			"name": "La Revue du Design",
-			"desc": "Mise en page d'un magazine de design.",
-			"img": ["revue_0.webp", "revue_1.webp"],
-			"date": "04/03/2022",
-			"with": "InDesign, Photoshop, Réalisations"
+			"name": "Création produit",
+			"desc": "Imaginer un produit et son packaging. \n Réalisation sur Photoshop",
+			"img": [
+				"Sweet Pepper ketchup.webp",
+				"Sweet Pepper ketchup mockup.webp"
+			],
+			"date": "2021"
 		},
 		{
-			"name": "L’Odyssée",
-			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
-			"img": ["odyssee_0.webp", "odyssee_1.jpg"],
-			"date": "04/03/2022",
-			"with": "InDesign, Photoshop, Réalisations"
+			"name": "Colorisation de photo",
+			"desc": "Partir d'une image en noir et blanc et la coloriser. \n Réalisation sur Photoshop",
+			"img": ["garçon en couleur.jpg", "garçon noir et blanc.jpg"],
+			"date": "2021"
 		},
 		{
-			"name": "L’Odyssée",
-			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
-			"img": ["odyssee_0.webp"],
-			"date": "04/03/2022",
-			"with": "InDesign, Photoshop, Réalisations"
+			"name": "Modification de couleurs",
+			"desc": "Modifier les couleurs d'un produit. \n Réalisation sur Photoshop",
+			"img": ["fraises rouge.jpg", "fraises verte.jpg"],
+			"date": "2021"
 		},
 		{
-			"name": "L’Odyssée",
-			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
-			"img": ["odyssee_0.webp"],
-			"date": "04/03/2022",
-			"with": "InDesign, Photoshop, Réalisations"
+			"name": "Refonte de logo",
+			"desc": "Proposition de refonte du logo de la marque de complément aliment alimentaires naturels et bio La Vie Naturelle. \n Réalisation sur Illustrator",
+			"img": [
+				"logo La Vie Naturelle.png",
+				"La vie naturelle_1.jpg",
+				"La vie naturelle_2.jpg",
+				"La vie naturelle_3.jpg",
+				"La vie naturelle_4.jpg"
+			],
+			"date": "2021"
 		},
 		{
-			"name": "L’Odyssée",
-			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque.",
-			"img": ["odyssee_0.webp"],
-			"date": "04/03/2022",
-			"with": "InDesign, Photoshop, Réalisations"
+			"name": "Social Media",
+			"desc": "Animation des réseaux sociaux du camping Capfun Las Bousigues. Prise de contenu photo et vidéo. Programmation et publication des posts sur les réseaux sociaux. \n Instagram, Facebook, Tiktok",
+			"img": [
+				"instagram capfun las bousigues.png",
+				"instagram capfun las bousigues 2.png",
+				"facebook capfun las bousigues.png",
+				"facebook capfun las bousigues 2.png",
+				"tiktok capfun las bousigues.png"
+			],
+			"date": "2020"
+		},
+		{
+			"name": "Création d'une application",
+			"desc": "Création graphique d'une application mobile de prêt à porter en suivant un parcours utilisateur. UX UI design \n Réalisation sur Illustrator",
+			"img": [
+				"monkey mind 1.png",
+				"monkey mind 2.png",
+				"monkey mind 3.png",
+				"monkey mind 4.png",
+				"monkey mind 5.png",
+				"monkey mind 6.png",
+				"monkey mind 7.png",
+				"monkey mind 8.png",
+				"monkey mind 9.png"
+			],
+			"date": "2020"
+		},
+		{
+			"name": "Identité graphique",
+			"desc": "Création d'une identité graphique pour une boutique de vrac. \n Réalisation sur Illustrator",
+			"img": [
+				"logo vrac en poche.png",
+				"déclinaison logo vrac en poche.png",
+				"couleurs vrac en poche.png",
+				"magazine vrac en poche.webp",
+				"magazine vrac en poche2.png"
+			],
+			"date": "2021"
+		},
+		{
+			"name": "Identité graphique",
+			"desc": "Refonte d'une identité graphique pour la pâtisserie Delice Cake de Narbonne. \n Réalisation sur Illustrator et Photoshop",
+			"img": [
+				"packaging delice cake.webp",
+				"icone delice cake.webp",
+				"logo delice cake.webp",
+				"carte-de-fidelite.webp"
+			],
+			"date": "2022"
+		},
+		{
+			"name": "Identité graphique",
+			"desc": "Création d'un concept, d'une marque et d'une identité (10h de la créa). Feed Your Fish est une marque de nourriture pour poisson pratique, vendue par sachet pour nourrir son animal de la quantité recommandée. \n Réalisation sur Illustrator et Photoshop",
+			"img": [
+				"feed your fish logo.jpg",
+				"feed your fish logo déclinaison.webp",
+				"feed your fish packaging.jpg",
+				"planche feed your fish 1.png",
+				"planche feed your fish 2.jpg"
+			],
+			"date": "2022"
+		},
+		{
+			"name": "Print",
+			"desc": "Création d'un flyer pour le Domaine de l'Oulivie afi de promouvoir les activités estivales du domaine. \n Réalisation sur Indesign",
+			"img": ["flyer-domaine-de-loulivie.webp"],
+			"date": "2022"
+		},
+		{
+			"name": "Identité graphique",
+			"desc": "Création d’une marque de rhum arrangé, construction d’identité de marque et de son storytelling. \n Réalisation sur Photoshop et Illustrator",
+			"img": [
+				"logo-lodyssee.webp",
+				"mockup-scylla-2.webp",
+				"scylla-2.jpg",
+				"mockup-calypso-2.webp",
+				"calypso-2.jpg",
+				"mockup-charybde-2.webp",
+				"charybde-2.jpg",
+				"mockup-thetis-2.webp",
+				"thetis-2.jpg",
+				"odyssée1.png"
+			],
+			"date": "2022"
+		},
+		{
+			"name": "Mise en page",
+			"desc": "Mise en page d'un magazine de 22 pages. \n Réalisation sur Photoshop et Indesign",
+			"img": [
+				"rdd1.png",
+				"rdd2.png",
+				"rdd3.png",
+				"rdd4.png",
+				"rdd5.png",
+				"rdd6.png",
+				"rdd7.png",
+				"rdd8.png"
+			],
+			"date": "2022"
+		},
+		{
+			"name": "Création graphique",
+			"desc": "Créations d'une bannière de site web, d'un badge et d'une affiche pour le What a Trip Festival, à l'occasion des Open Com. Concours entre les étudiants de Sup de Com afin de proposer la meilleure stratégie de communication en réponse au brief annonceur. \n Réalisation sur Illustrator",
+			"img": ["Banière site web.png", "Mockup badge.png"],
+			"date": "2023"
+		},
+		{
+			"name": "Affiche",
+			"desc": "Créations d'une affiche pour une nouvelle émission cuisuine. Concept : Un chef de cuisine arrive dans une ville, tape au hasard à une porte. Il leur propose de préparer un déjeuner avec ce qu’ils ont dans le frigo en 30mn. \n Réalisation sur Illustrator et Photoshop",
+			"img": ["30 min et à ta porte.jpg"],
+			"date": "2023"
+		},
+		{
+			"name": "Logo",
+			"desc": "Créations d'un logo pour une société proposant des prestation de location d'escace coworking. \n Réalisation sur Illustrator",
+			"img": ["rent & co.png"],
+			"date": "2023"
+		},
+		{
+			"name": "Concept",
+			"desc": "Créations d'une nouvelle pâte à tartiner à la pistache. Pistachio Nut, la nouvelle saveur de pâte à tartiner qui met directement la pistache sur vos tartines. \n Réalisation sur Photoshop",
+			"img": ["PISTACHIO NUT.png"],
+			"date": "2023"
+		},
+		{
+			"name": "Vidéo",
+			"desc": "Ecriture du script, prise de vue, motage vidéo, voix off. Vidéo storytelling \"Draw my life\" de l'agence Junior Arana créée dans le cadre d'un projet de fin d'année. \n Réalisation sur Première Pro",
+			"img": ["Draw Arana-4e export.mp4"],
+			"date": "2022"
+		},
+		{
+			"name": "Print",
+			"desc": "Création d'un flyer A5 à destination des habitants de la commune, ainsi qu’une affiche format A3 qui a été affichée dans les villages de l’uzège à l'occasion de la fête votive de Saint-Maximin. \n Réalisation sur Photoshop",
+			"img": [
+				"flyer-fete-votive-saint-maximi1.webp",
+				"flyer-verso.webp",
+				"affiche-fete-votive-saint-maximin-a3.webp"
+			],
+			"date": "2022"
+		},
+		{
+			"name": "Ceressa",
+			"desc": "Branding d'une nouvelle marque d'huiles essentielles. Création du nom de marque de son identité visuelle. Design Produit pour les packaging des huiles.\n Réalisation sur Illustrator et Photoshop",
+			"img": ["ceressa.png"],
+			"date": "2022"
+		},
+		{
+			"name": "Identité visuelle",
+			"desc": "Création d'un logo, d'un save the date et de remerciements pour les 50 ans de Pink Lady.\n Réalisation sur Illustrator",
+			"img": [
+				"logo 50 ans pink lady.png",
+				"std.png",
+				"remercienements.png"
+			],
+			"date": "2024"
+		},
+		{
+			"name": "Charte Graphique",
+			"desc": "Création d'un concept d'une marque de costume pour hommes réversibles qui s'adapte aux besoins du quotidien.\n Réalisation sur Illustrator, Photoshop et Indesign",
+			"img": [
+				"newman.png",
+				"newman2.png",
+				"newman3.png",
+				"cheminse beige.png",
+				"chemise manche beige.png"
+			],
+			"date": "2024"
+		},
+		{
+			"name": "Production Graphique",
+			"desc": "Reproduction des personnages de Cartoon Network les Supers Nanas, Dexter et Deedee.\n Réalisation sur Illustrator",
+			"img": ["supernana-f.jpg", "dexter-f.jpg", "deedee.jpg"],
+			"date": "2020"
+		},
+		{
+			"name": "Mise en page",
+			"desc": "Mise en page d'un magazine de 16 pages.\n Réalisation sur Indesign",
+			"img": [
+				"Magazine VFX_01.png",
+				"Magazine VFX_02.png",
+				"Magazine VFX_03.png",
+				"Magazine VFX_04.png"
+			],
+			"date": "2020"
 		}
 	]
 }

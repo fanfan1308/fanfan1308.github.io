@@ -9,14 +9,10 @@ H
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 9
 	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 ;
 src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
 B
 tailwind.config.js,0\9\0918cbb76f2c44f223706cec9d31a32cd1177ce4
-F
-src/Component/Logo.tsx,9\b\9b53fb8b70b0d5bffa0c9c9a969bfefa56e21b1f
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 =
