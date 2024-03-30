@@ -23,7 +23,7 @@ function App() {
 					<img
 						src={require("./assets/" + item.img[0])}
 						alt={item.name}
-                        className="max-h-72"
+                        className="max-h-72 m-auto"
 					/>
 				) : (
 					<Carousel
@@ -95,9 +95,26 @@ function App() {
 					</Typography>
 				</div>
 			</div>
-			<div className="max-w-full grid lg:p-32 md:p-28 sm:p-20 p-4 flex-wrap justify-around gap-4 grid-cr items-center">
-				{realisation}
-			</div>
+            <div className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4">
+                <Typography variant="h2" className="mb-8 ml-8">
+                    Mes réalisations
+                </Typography>
+                <div className="max-w-full grid flex-wrap justify-around gap-4 grid-cr items-center">
+                    {realisation}
+                </div>
+            </div>
+            <div className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4">
+                <Typography variant="h2" className="mb-8 ml-8">
+                    Mes expériences
+                </Typography>
+                <div className="max-w-full">
+                    <div className="flex flex-col h-full">
+                        <div className="flex h-1/2 flex-col">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 	);
 }

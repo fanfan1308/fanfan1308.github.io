@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .grid-cr {
-    grid-template-columns: repeat(auto-fill, 20rem)
+    grid-template-columns: repeat(auto-fill, 18rem)
 }
 
 @media (min-width: 720px) {
