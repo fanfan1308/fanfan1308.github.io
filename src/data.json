@@ -219,5 +219,28 @@
 			],
 			"date": "2020"
 		}
-	]
+	],
+    "experience": [
+        {
+            "name": "Responsable Stratégies",
+            "where": "Arana Agence de communication junior, Montpellier",
+            "date": "Octobre 2021 – Août 2022",
+            "desc": "5 étudiants à Sup’ de Com Montpellier travaillent pour différents annonceurs.\nImage de marque, stratégies, print et web, événementiel."
+        },
+        {
+            "name": "Assistante de Communication",
+            "where": "Groupe Open Modal, Saint-Jean de Védas",
+            "date": "Octobre 2019 – Août 2024",
+            "what": "Contrat en alternance",
+            "desc": "Organisation d’un calendrier éditorial, animation des pages LinkedIn et des sites vitrines newsletters clients, veille, écriture d’articles en interne, mise à jour des chartes graphiques du Groupe, réalisation de vidéos, travail sur le design d’une application de gestion de projet en interne en tenant compte de l’expérience utilisateur."
+        },
+        {
+            "name": "Community Manager",
+            "where": "Camping Capfun Las Bousigues, Barcarès",
+            "date": "Juin 2019 – Août 2019",
+            "what": "Stage",
+            "desc": "Gestion d’un calendrier éditorial, création et animation d’une communauté, veille de la e-réputation, mise en ligne de contenu.",
+            "special": "Classement des meilleurs CM de la saison : 8ème /110"
+        }
+    ]
 }
