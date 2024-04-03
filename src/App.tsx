@@ -13,8 +13,33 @@ import {
 import data from "./data.json";
 import "./App.css";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import React, { useEffect } from "react";
 
 function App() {
+    const [isMobile, setIsMobile] = React.useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            let p;
+            if(window.innerWidth < 640) {
+                p = 1;
+            } else if(window.innerWidth < 768) {
+                p = 5;
+            } else if(window.innerWidth < 1024) {
+                p = 7;
+            } else {
+                p = 8;
+            }
+            setIsMobile(experienceSize + p * 16 > window.innerWidth);
+            console.log(experienceSize, p, p * 16, experienceSize + p * 16, window.innerWidth, experienceSize + p * 16 > window.innerWidth)
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
 	const realisation = data.realisation.map((item, j) => (
 		<Card
 			className="mt-6 my-6 mx-auto lg:w-80 md:w-60 sm:w-80 hover:shadow-xl transition-shadow"
@@ -80,22 +105,26 @@ function App() {
 		</Card>
 	));
 
+    const experienceSize = data.experience.map((item) => item.date.length * 8).reduce((a, b) => a + b, 0) + 48;
+
 	const experience = data.experience.map((item, j) => {
-		let width = item.date.length * 8 + "px";
+		let width = item.date.length * 8;
+		let width2 = Math.sqrt(2 * 80 ** 2);
+		let translateX = (84 * (Math.sqrt(2) - 1)) / Math.sqrt(2);
 		return (
 			<div
 				className={
 					"h-full flex " +
 					(j % 2 === 0 ? "flex-col" : "flex-col-reverse")
 				}
-                key={item.name + "_" + j}
+				key={item.name + "_" + j}
 			>
 				<div
 					className={
 						"h-1/2 flex " +
 						(j % 2 === 0 ? "flex-col" : "flex-col-reverse")
 					}
-					style={{ width: width }}
+					style={{ width: width + "px" }}
 				>
 					<div className="flex h-1/2 relative">
 						<Tooltip
@@ -146,15 +175,22 @@ function App() {
 							/>
 						</Tooltip>
 					</div>
-					<div className="flex flex-row-reverse h-1/2 relative">
+					<div className="flex flex-row-reverse h-1/2 relative w-40">
 						<div
 							className={
-								"w-[128px] border-b border-black top-1/2 left-1/2 absolute translate-x-3 " +
-								(j % 2 === 0
-									? "rotate-45 -translate-y-1"
-									: "-rotate-45 translate-y-[5px]")
+								"border-b border-black top-1/2 absolute " +
+								(j % 2 === 0 ? "rotate-45" : "-rotate-45")
+							}
+							style={
+								{
+									width: width2 + "px",
+									"--tw-translate-x": translateX + "px",
+								} as React.CSSProperties
 							}
 						></div>
+						<div className={"absolute left-full size-4 bg-white z-10 border-black border-2 rounded-full -translate-y-1/2 " + 
+                            (j % 2 === 0 ? "top-full" : "")}>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -168,7 +204,7 @@ function App() {
 				className={
 					"max-w-full flex md:p-32 sm:p-20 p-12 md:flex-row flex-col"
 				}
-                id="qui-suis-je"
+				id="qui-suis-je"
 			>
 				<div className="h-fit md:my-auto sm:mr-10 self-center mb-10">
 					<img
@@ -187,7 +223,10 @@ function App() {
 					</Typography>
 				</div>
 			</div>
-			<div className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4" id="realisation">
+			<div
+				className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4"
+				id="realisation"
+			>
 				<Typography variant="h2" className="mb-8 ml-8">
 					Mes réalisations
 				</Typography>
@@ -195,13 +234,16 @@ function App() {
 					{realisation}
 				</div>
 			</div>
-			<div className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4" id="xp" >
+			<div
+				className="flex max-w-full flex-col lg:p-32 md:p-28 sm:p-20 p-4 lg:pt-24 md:pt-20 sm:pt-12 pt-0 sm:!pb-12 !pb-4"
+				id="xp"
+			>
 				<Typography variant="h2" className="mb-8 ml-8">
 					Mes expériences
 				</Typography>
-				<div className="max-w-full h-80 flex flex-row relative">
-					<div className="w-12"></div>
+				<div className={"max-w-full h-80 flex flex-row relative w-fit m-auto " + (isMobile ? "none" : "")}>
 					{experience}
+					<div className="w-12"></div>
 					<div className="w-full absolute h-[1px] border-b-2 border-black top-1/2"></div>
 				</div>
 			</div>
