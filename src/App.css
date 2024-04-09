@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .grid-cr {
     grid-template-columns: repeat(auto-fill, 18rem)
 }

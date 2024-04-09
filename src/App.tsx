@@ -1,44 +1,55 @@
 import Header from "./Component/Header";
 import profil from "./assets/profil.jpg";
 import {
+	Accordion,
+	AccordionBody,
+	AccordionHeader,
 	Card,
 	CardBody,
 	CardHeader,
 	Carousel,
 	Chip,
 	IconButton,
+	SpeedDial,
+	SpeedDialHandler,
 	Tooltip,
 	Typography,
 } from "@material-tailwind/react";
 import data from "./data.json";
 import "./App.css";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import {
+	ArrowLeftIcon,
+	ArrowRightIcon,
+	ArrowUpIcon,
+} from "@heroicons/react/24/outline";
 import React, { useEffect } from "react";
 
 function App() {
-    const [isMobile, setIsMobile] = React.useState(false);
+	const [isMobile, setIsMobile] = React.useState(false);
+	const [open, setOpen] = React.useState(1);
 
-    useEffect(() => {
-        const handleResize = () => {
-            let p;
-            if(window.innerWidth < 640) {
-                p = 1;
-            } else if(window.innerWidth < 768) {
-                p = 5;
-            } else if(window.innerWidth < 1024) {
-                p = 7;
-            } else {
-                p = 8;
-            }
-            setIsMobile(experienceSize + p * 16 > window.innerWidth);
-            console.log(experienceSize, p, p * 16, experienceSize + p * 16, window.innerWidth, experienceSize + p * 16 > window.innerWidth)
-        };
-        window.addEventListener("resize", handleResize);
-        handleResize();
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+	const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
+
+	useEffect(() => {
+		const handleResize = () => {
+			let p;
+			if (window.innerWidth < 640) {
+				p = 1;
+			} else if (window.innerWidth < 768) {
+				p = 5;
+			} else if (window.innerWidth < 1024) {
+				p = 7;
+			} else {
+				p = 8;
+			}
+			setIsMobile(experienceSize + p * 16 * 2 > window.innerWidth);
+		};
+		window.addEventListener("resize", handleResize);
+		handleResize();
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	const realisation = data.realisation.map((item, j) => (
 		<Card
@@ -47,11 +58,21 @@ function App() {
 		>
 			<CardHeader color="white" className="relative border">
 				{item.img.length === 1 ? (
-					<img
-						src={require("./assets/" + item.img[0])}
-						alt={item.name}
-						className="max-h-72 m-auto"
-					/>
+					item.img[0].endsWith("mp4") ? (
+						<video className="max-h-72 m-auto" controls>
+							<source
+								src={require("./assets/" + item.img[0])}
+								type="video/mp4"
+							/>
+							Votre navigateur ne supporte pas la vidéo.
+						</video>
+					) : (
+						<img
+							src={require("./assets/" + item.img[0])}
+							alt={item.name}
+							className="max-h-72 m-auto"
+						/>
+					)
 				) : (
 					<Carousel
 						prevArrow={({ handlePrev, firstIndex }) => (
@@ -85,14 +106,27 @@ function App() {
 						)}
 						className="items-center"
 					>
-						{item.img.map((img, i) => (
-							<img
-								src={require("./assets/" + img)}
-								alt={item.name + "_" + i}
-								key={item.name + "_" + i}
-								className="max-h-72 m-auto"
-							/>
-						))}
+						{item.img.map((img, i) =>
+							img.endsWith("mp4") ? (
+								<video
+									key={item.name + "_" + i}
+									className="max-h-72 m-auto"
+									controls
+								>
+									<source
+										src={require("./assets/" + img)}
+										type="video/mp4"
+									/>
+								</video>
+							) : (
+								<img
+									src={require("./assets/" + img)}
+									alt={item.name + "_" + i}
+									key={item.name + "_" + i}
+									className="max-h-72 m-auto"
+								/>
+							)
+						)}
 					</Carousel>
 				)}
 			</CardHeader>
@@ -104,10 +138,55 @@ function App() {
 			</CardBody>
 		</Card>
 	));
+	const experienceMobile = data.experience_formation.map((item, j) => (
+		<Accordion key={item.name + "_" + j} open={open === j + 1}>
+			<AccordionHeader
+				onClick={() => handleOpen(j + 1)}
+				className={
+					"px-4 " +
+					(j === data.experience_formation.length - 1 &&
+					open !== j + 1
+						? "border-b-0"
+						: "")
+				}
+			>
+				{open === j + 1 ? (
+					<div className="flex flex-col">
+						<Typography color="blue-gray" variant="h5">
+							{item.name}
+						</Typography>
+						<Typography color="blue-gray" variant="h6">
+							{item.where}
+						</Typography>
+						<Typography color="blue-gray" variant="paragraph">
+							{item.what}
+						</Typography>
+					</div>
+				) : (
+					item.name
+				)}
+			</AccordionHeader>
+			<AccordionBody className="px-4">
+				{item.desc}
+				{item.special && (
+					<Typography
+						variant="small"
+						color="blue-gray"
+						className="font-normal opacity-80 before:content-['✭'] before:mr-1 before:text-yellow-800 after:content-['✭'] after:ml-1 after:text-yellow-800"
+					>
+						{item.special}
+					</Typography>
+				)}
+			</AccordionBody>
+		</Accordion>
+	));
 
-    const experienceSize = data.experience.map((item) => item.date.length * 8).reduce((a, b) => a + b, 0) + 48;
+	const experienceSize =
+		data.experience_formation
+			.map((item) => item.date.length * 8)
+			.reduce((a, b) => a + b, 0) + 48;
 
-	const experience = data.experience.map((item, j) => {
+	const experience = data.experience_formation.map((item, j) => {
 		let width = item.date.length * 8;
 		let width2 = Math.sqrt(2 * 80 ** 2);
 		let translateX = (84 * (Math.sqrt(2) - 1)) / Math.sqrt(2);
@@ -167,10 +246,13 @@ function App() {
 								size="lg"
 								value={item.date}
 								className={
-									"absolute left-1/2 z-10 text-sm -translate-x-1/2 " +
+									"absolute left-1/2 z-10 text-sm -translate-x-1/2" +
 									(j % 2 === 0
-										? "-translate-y-full top-full"
-										: "top-0")
+										? " -translate-y-full top-full"
+										: " top-0") +
+									(item.type === "formation"
+										? " bg-red-900"
+										: "")
 								}
 							/>
 						</Tooltip>
@@ -188,9 +270,12 @@ function App() {
 								} as React.CSSProperties
 							}
 						></div>
-						<div className={"absolute left-full size-4 bg-white z-10 border-black border-2 rounded-full -translate-y-1/2 " + 
-                            (j % 2 === 0 ? "top-full" : "")}>
-                        </div>
+						<div
+							className={
+								"absolute left-full size-4 bg-white z-10 border-black border-2 rounded-full -translate-y-1/2 " +
+								(j % 2 === 0 ? "top-full" : "")
+							}
+						></div>
 					</div>
 				</div>
 			</div>
@@ -198,8 +283,19 @@ function App() {
 	});
 
 	return (
-		<div className="App">
+		<div className="scroll-smooth" id="top">
 			<Header />
+			<div className="fixed bottom-8 right-8 hidden sm:block">
+				<SpeedDial>
+					<SpeedDialHandler>
+						<a href="#top">
+							<IconButton size="lg" className="rounded-full">
+								<ArrowUpIcon className="h-5 w-5" />
+							</IconButton>
+						</a>
+					</SpeedDialHandler>
+				</SpeedDial>
+			</div>
 			<div
 				className={
 					"max-w-full flex md:p-32 sm:p-20 p-12 md:flex-row flex-col"
@@ -239,12 +335,25 @@ function App() {
 				id="xp"
 			>
 				<Typography variant="h2" className="mb-8 ml-8">
-					Mes expériences
+					Mes expériences et <span className="bg-red-900 text-white">&nbsp; formations &nbsp;</span>
 				</Typography>
-				<div className={"max-w-full h-80 flex flex-row relative w-fit m-auto " + (isMobile ? "none" : "")}>
+				<div
+					className={
+						"max-w-full h-80 flex flex-row relative w-fit m-auto " +
+						(isMobile ? "none" : "")
+					}
+				>
 					{experience}
 					<div className="w-12"></div>
 					<div className="w-full absolute h-[1px] border-b-2 border-black top-1/2"></div>
+				</div>
+				<div
+					className={
+						"max-w-full flex flex-col relative w-fit m-auto border-blue-gray-100 border rounded-lg " +
+						(isMobile ? "" : "none")
+					}
+				>
+					{experienceMobile}
 				</div>
 			</div>
 		</div>

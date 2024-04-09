@@ -53,7 +53,7 @@ export default function Header() {
 
 	return (
 		<Navbar
-			className={"sticky top-0 z-10 h-max max-w-full rounded-none"}
+			className={"sticky top-0 z-[51] h-max max-w-full rounded-none"}
 			placeholder={""}
 		>
 			<div className="flex items-center justify-between text-blue-gray-900">
