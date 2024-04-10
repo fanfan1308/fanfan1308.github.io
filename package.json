@@ -1,7 +1,7 @@
 {
   "name": "site-perso",
   "version": "0.1.0",
-  "homepage": "https://samuel-casasdray.github.io/my-site",
+  "homepage": "https://fanytolza.com",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.1",
