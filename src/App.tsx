@@ -23,6 +23,7 @@ import {
 	ArrowUpIcon,
 } from "@heroicons/react/24/outline";
 import React, { useEffect } from "react";
+import axios from "axios";
 
 function App() {
 	const [isMobile, setIsMobile] = React.useState(false);
@@ -282,6 +283,24 @@ function App() {
 		);
 	});
 
+    const sendMail = () => {
+        // create axios request
+        const data = {
+            from: "Excited User <mailgun@mg.fanytolza.com>",
+            to: ["tolzafany@gmail.com", "samuelcasasdray@gmail.com"],
+            subject: "Hello",
+            text: "Testing some Mailgun awesomeness!"
+        };
+        // Add http basic auth to the client
+        const header = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic ' + btoa('api:8b2b99688b9e3caf2fe84a260bc60f06-4b670513-098ca6f2')
+        }
+        axios.post('https://api.mailgun.net/v3/mg.fanytolza.com/messages', data, { headers: header })
+            .then(msg => console.log(msg)) // logs response data
+            .catch(err => console.log(err)); // logs any error
+    }
+
 	return (
 		<div className="scroll-smooth" id="top">
 			<Header />
@@ -315,7 +334,7 @@ function App() {
 					</Typography>
 					<Typography variant="lead">
 						Moi, c'est Fany, étudiante en communication actuellement
-						en 5ᵉ année de Bachelor à Sup’ de Com Montpellier 😀
+						en 2ᵉ année de Master à Sup’ de Com Montpellier 😀
 					</Typography>
 				</div>
 			</div>
@@ -356,6 +375,7 @@ function App() {
 					{experienceMobile}
 				</div>
 			</div>
+            <button onClick={sendMail}>Send mail</button>
 		</div>
 	);
 }
