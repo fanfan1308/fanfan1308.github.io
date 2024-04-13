@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87a8d6cb.css",
-    "main.js": "/static/js/main.fc0dde5c.js",
+    "main.js": "/static/js/main.cc5a9311.js",
     "static/js/453.2cd4a051.chunk.js": "/static/js/453.2cd4a051.chunk.js",
     "static/media/Draw Arana_BD.mp4": "/static/media/Draw Arana_BD.e7de8f09676e605c7351.mp4",
     "static/media/ORANGINA_FILM_BD.mp4": "/static/media/ORANGINA_FILM_BD.bf7ff0d11eb63447dee4.mp4",
@@ -89,11 +89,11 @@
     "static/media/icone delice cake.webp": "/static/media/icone delice cake.6d168acb0d8d6fa412e5.webp",
     "index.html": "/index.html",
     "main.87a8d6cb.css.map": "/static/css/main.87a8d6cb.css.map",
-    "main.fc0dde5c.js.map": "/static/js/main.fc0dde5c.js.map",
+    "main.cc5a9311.js.map": "/static/js/main.cc5a9311.js.map",
     "453.2cd4a051.chunk.js.map": "/static/js/453.2cd4a051.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87a8d6cb.css",
-    "static/js/main.fc0dde5c.js"
+    "static/js/main.cc5a9311.js"
   ]
 }
