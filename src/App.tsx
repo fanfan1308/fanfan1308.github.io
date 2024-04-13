@@ -42,7 +42,18 @@ function App() {
 			} else {
 				p = 8;
 			}
-			setIsMobile(experienceSize + p * 16 * 2 > window.innerWidth);
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+			setIsMobile(experienceSize + p * 16 * 2 > window.innerWidth || toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            }));
 		};
 		window.addEventListener("resize", handleResize);
 		handleResize();
