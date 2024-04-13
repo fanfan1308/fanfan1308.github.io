@@ -350,7 +350,7 @@ function App() {
 				<Typography variant="h2" className="mb-8 ml-8">
 					Mes expériences et <span className={isMobile ? "" : "bg-red-900 text-white"}>{isMobile ? "" : <>&nbsp;</>} formations &nbsp;</span>
 				</Typography>
-				<div
+				{/* <div
 					className={
 						"max-w-full h-80 flex flex-row relative w-fit m-auto " +
 						(isMobile ? "none" : "")
@@ -359,7 +359,7 @@ function App() {
 					{experience}
 					<div className="w-12"></div>
 					<div className="w-full absolute h-[1px] border-b-2 border-black top-1/2"></div>
-				</div>
+				</div> */}
 				<div
 					className={
 						"max-w-full flex flex-col relative w-fit m-auto border-blue-gray-100 border rounded-lg " +
