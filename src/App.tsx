@@ -167,7 +167,7 @@ function App() {
 					item.name
 				)}
 			</AccordionHeader>
-			<AccordionBody className="px-4">
+			<AccordionBody className="px-4  whitespace-pre-line">
 				{item.desc}
 				{item.special && (
 					<Typography
@@ -227,7 +227,7 @@ function App() {
 									<Typography
 										variant="small"
 										color="blue-gray"
-										className="font-normal opacity-80"
+										className="font-normal opacity-80 whitespace-pre-line"
 									>
 										{item.desc}
 									</Typography>
@@ -283,24 +283,6 @@ function App() {
 		);
 	});
 
-    const sendMail = () => {
-        // create axios request
-        const data = {
-            from: "Excited User <mailgun@mg.fanytolza.com>",
-            to: ["tolzafany@gmail.com", "samuelcasasdray@gmail.com"],
-            subject: "Hello",
-            text: "Testing some Mailgun awesomeness!"
-        };
-        // Add http basic auth to the client
-        const header = {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + btoa('api:8b2b99688b9e3caf2fe84a260bc60f06-4b670513-098ca6f2')
-        }
-        axios.post('https://api.mailgun.net/v3/mg.fanytolza.com/messages', data, { headers: header })
-            .then(msg => console.log(msg)) // logs response data
-            .catch(err => console.log(err)); // logs any error
-    }
-
 	return (
 		<div className="scroll-smooth" id="top">
 			<Header />
@@ -354,7 +336,7 @@ function App() {
 				id="xp"
 			>
 				<Typography variant="h2" className="mb-8 ml-8">
-					Mes expériences et <span className="bg-red-900 text-white">&nbsp; formations &nbsp;</span>
+					Mes expériences et <span className={isMobile ? "" : "bg-red-900 text-white"}>{isMobile ? "" : <>&nbsp;</>} formations &nbsp;</span>
 				</Typography>
 				<div
 					className={
@@ -375,7 +357,6 @@ function App() {
 					{experienceMobile}
 				</div>
 			</div>
-            <button onClick={sendMail}>Send mail</button>
 		</div>
 	);
 }

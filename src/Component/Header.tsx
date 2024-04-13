@@ -5,8 +5,8 @@ import {
 	Navbar,
 	Typography,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { SiLinkedin } from "@icons-pack/react-simple-icons";
+import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { SiGmail, SiLinkedin } from "@icons-pack/react-simple-icons";
 import ft from "../assets/ft.png";
 
 export default function Header() {
@@ -28,8 +28,7 @@ export default function Header() {
 			{[
 				["Qui suis-je?", "qui-suis-je"],
 				["Réalisations", "realisation"],
-				["Expérience", "xp"],
-				["Formation", "formation"],
+				["Expérience et Formation", "xp"],
 				["Contact", "contact"],
 			].map((item) => (
 				<Typography
@@ -71,7 +70,7 @@ export default function Header() {
 				</div>
 				<div className="hidden lg:block">{navlist}</div>
 				<div className="flex">
-					<div className="block">
+					<div className="flex flex-row gap-4">
 						<a
 							href={"https://www.linkedin.com/in/fany-tolza/"}
 							target="_blank"
@@ -79,6 +78,20 @@ export default function Header() {
 						>
 							<SiLinkedin color="default" size={"24"} />
 						</a>
+                        <a
+                            href="mailto:tolzafany@gmail.com"
+                            target="_blank"
+							rel="noreferrer"
+                        >
+                            <SiGmail color="default" size={"24"} />
+                        </a>
+                        <a
+                            href="tel:+33676166448"
+                            target="_blank"
+							rel="noreferrer"
+                        >
+                            <PhoneIcon className="size-6" strokeWidth={2}/>
+                        </a>
 					</div>
                     <div className="block lg:hidden mx-3"></div>
                     <IconButton

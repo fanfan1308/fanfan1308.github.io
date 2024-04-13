@@ -231,7 +231,8 @@
             "type": "formation",
 			"name": "Master Manager de la Communication",
 			"where": "Sup’ de Com, Montpellier",
-			"date": "2022 – 2024"
+			"date": "2022 – 2024",
+            "desc": "- Définir et concevoir une stratégie globale de communication d'entreprise\n- Organiser et déployer la stratégie de communication et de marketing digital\n- Piloter un projet de communication et de marketing digital\n- Manager des équipes internes / externes en lien avec les projets de communication et marketing digital\n- Manager un processus d'amélioration continue et évaluer la performance opérationnelle"
 		},
 		{
             "type": "experience",
@@ -246,7 +247,8 @@
 			"name": "Bachelor Responsable Communication",
 			"where": "Sup’ de Com, Montpellier",
 			"date": "2019 – 2022",
-			"special": "Major de promotion"
+			"special": "Major de promotion",
+            "desc": "- Analyse et conception d'un plan de communication\n- Mise en oeuvre opérationnelle d'un plan de communication\n- Conception et production des supports de communication\n- Déploiement d'une communication adaptée à l'expérience utilisateur (Ux)\n- Animation et pilotage d'un service communication"
 		},
 		{
             "type": "experience",
