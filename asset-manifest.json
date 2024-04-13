@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87a8d6cb.css",
-    "main.js": "/static/js/main.d339d275.js",
+    "main.js": "/static/js/main.868df3ad.js",
     "static/js/453.2cd4a051.chunk.js": "/static/js/453.2cd4a051.chunk.js",
     "static/media/Draw Arana_BD.mp4": "/static/media/Draw Arana_BD.e7de8f09676e605c7351.mp4",
     "static/media/ORANGINA_FILM_BD.mp4": "/static/media/ORANGINA_FILM_BD.bf7ff0d11eb63447dee4.mp4",
@@ -12,6 +12,7 @@
     "static/media/30 min et à ta porte.jpg": "/static/media/30 min et à ta porte.1b54576af07bac844b10.jpg",
     "static/media/Magazine VFX_03.png": "/static/media/Magazine VFX_03.e353dd5b568a78113e24.png",
     "static/media/odyssée1.png": "/static/media/odyssée1.b85b2c00c7e25d976863.png",
+    "static/media/btm.png": "/static/media/btm.f0a6b4809a47a59422e5.png",
     "static/media/garçon en couleur.jpg": "/static/media/garçon en couleur.351c9e2f753eb88ef836.jpg",
     "static/media/facebook capfun las bousigues 2.png": "/static/media/facebook capfun las bousigues 2.87ffd861a5f61445b674.png",
     "static/media/instagram capfun las bousigues 2.png": "/static/media/instagram capfun las bousigues 2.6a9ee72801f521aa9c58.png",
@@ -88,11 +89,11 @@
     "static/media/icone delice cake.webp": "/static/media/icone delice cake.6d168acb0d8d6fa412e5.webp",
     "index.html": "/index.html",
     "main.87a8d6cb.css.map": "/static/css/main.87a8d6cb.css.map",
-    "main.d339d275.js.map": "/static/js/main.d339d275.js.map",
+    "main.868df3ad.js.map": "/static/js/main.868df3ad.js.map",
     "453.2cd4a051.chunk.js.map": "/static/js/453.2cd4a051.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87a8d6cb.css",
-    "static/js/main.d339d275.js"
+    "static/js/main.868df3ad.js"
   ]
 }
