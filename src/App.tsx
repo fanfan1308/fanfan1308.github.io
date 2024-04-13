@@ -23,7 +23,6 @@ import {
 	ArrowUpIcon,
 } from "@heroicons/react/24/outline";
 import React, { useEffect } from "react";
-import axios from "axios";
 
 function App() {
 	const [isMobile, setIsMobile] = React.useState(false);
@@ -51,6 +50,8 @@ function App() {
 			window.removeEventListener("resize", handleResize);
 		};
 	}, []);
+
+    const renderHtml = (html: string) => <div dangerouslySetInnerHTML={{ __html: html }}></div>;
 
 	const realisation = data.realisation.map((item, j) => (
 		<Card
@@ -135,7 +136,7 @@ function App() {
 				<Typography variant="h5" color="blue-gray" className="mb-2">
 					{item.name}
 				</Typography>
-				<Typography>{item.desc}</Typography>
+				<Typography>{renderHtml(item.desc)}</Typography>
 			</CardBody>
 		</Card>
 	));
