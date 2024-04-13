@@ -362,8 +362,7 @@ function App() {
 				</div> */}
 				<div
 					className={
-						"max-w-full flex flex-col relative w-fit m-auto border-blue-gray-100 border rounded-lg " +
-						(isMobile ? "" : "none")
+						"max-w-full flex flex-col relative w-fit m-auto border-blue-gray-100 border rounded-lg "
 					}
 				>
 					{experienceMobile}
