@@ -327,8 +327,9 @@ function App() {
 						Qui suis-je ?
 					</Typography>
 					<Typography variant="lead">
-						Moi, c'est Fany, étudiante en communication actuellement
-						en 2ᵉ année de Master à Sup’ de Com Montpellier 😀
+						Récemment arrivée sur Morges, 
+je recherche une équipe avec qui  relever de nouveaux défis au quotidien. Dès à présent disponible,
+je recherche un poste de chef de projet, chargée de communication ou social media manager 😀
 					</Typography>
 				</div>
 			</div>
