@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87a8d6cb.css",
-    "main.js": "/static/js/main.0b1be2a6.js",
+    "main.js": "/static/js/main.36614bb2.js",
     "static/js/453.2cd4a051.chunk.js": "/static/js/453.2cd4a051.chunk.js",
     "static/media/Draw Arana_BD.mp4": "/static/media/Draw Arana_BD.e7de8f09676e605c7351.mp4",
     "static/media/ORANGINA_FILM_BD.mp4": "/static/media/ORANGINA_FILM_BD.bf7ff0d11eb63447dee4.mp4",
@@ -59,7 +59,7 @@
     "static/media/feed your fish packaging.jpg": "/static/media/feed your fish packaging.a33f447a2f78f9e7ec51.jpg",
     "static/media/monkey mind 8.png": "/static/media/monkey mind 8.8e5d8459c51c328ce3b6.png",
     "static/media/Sweet Pepper ketchup.webp": "/static/media/Sweet Pepper ketchup.e94f7a279c82355a9274.webp",
-    "static/media/profil.jpg": "/static/media/profil.0c054facdb6560d6dab6.jpg",
+    "static/media/profil.jpg": "/static/media/profil.f4667248367195d9231c.jpg",
     "static/media/La vie naturelle_3.png": "/static/media/La vie naturelle_3.c7f7701bd7ea4b78ca01.png",
     "static/media/carte-de-fidelite.webp": "/static/media/carte-de-fidelite.0d5c9f61ab75a9b6da45.webp",
     "static/media/ceressa.png": "/static/media/ceressa.9658375d4f46717aaefe.png",
@@ -89,11 +89,11 @@
     "static/media/icone delice cake.webp": "/static/media/icone delice cake.6d168acb0d8d6fa412e5.webp",
     "index.html": "/index.html",
     "main.87a8d6cb.css.map": "/static/css/main.87a8d6cb.css.map",
-    "main.0b1be2a6.js.map": "/static/js/main.0b1be2a6.js.map",
+    "main.36614bb2.js.map": "/static/js/main.36614bb2.js.map",
     "453.2cd4a051.chunk.js.map": "/static/js/453.2cd4a051.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87a8d6cb.css",
-    "static/js/main.0b1be2a6.js"
+    "static/js/main.36614bb2.js"
   ]
 }
